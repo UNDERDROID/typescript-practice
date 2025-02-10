@@ -3,8 +3,8 @@ export class Todo {
         this.tasks = [];
         this.isComplete = false;
     }
-    addTask(text) {
-        this.tasks.push(text);
+    addTask(task, status) {
+        this.tasks.push({ task, status });
     }
     showTask() {
         console.log("Current Tasks:", this.tasks);
